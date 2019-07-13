@@ -12,6 +12,7 @@ echo $c[blink] Blink text $c[reset]
 echo $c[reverse] Reverse text $c[reset]
 echo $c[hidden] Hidden text $c[reset]
 echo $c[strike] Strike or Strikethrough text $c[reset]
+echo $c[overline] Overlined text $c[reset]
 echo
 echo $c[red] Red color $c[reset]
 echo $c[bg_red] Red Background $c[reset]
