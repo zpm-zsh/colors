@@ -11,6 +11,9 @@ typeset -gA c
 
 : ${c[dim]:="\e[2m"}
 
+: ${c[italic]:="\e[3m"}
+: ${c[coursive]:="\e[3m"}
+
 : ${c[underline]:="\e[4m"}
 
 : ${c[blink]:="\e[5m"}
@@ -18,6 +21,10 @@ typeset -gA c
 : ${c[reverse]:="\e[7m"}
 
 : ${c[hidden]:="\e[8m"}
+
+: ${c[strike]:="\e[9m"}
+: ${c[strikethrough]:="\e[9m"}
+
 
 
 # Colors
