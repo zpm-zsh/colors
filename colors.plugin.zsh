@@ -8,23 +8,16 @@ typeset -gA c
 : ${c[reset]:="\e[0m"}
 
 : ${c[bold]:="\e[1m"}
-: ${c[no_bold]:="\e[21m"}
 
 : ${c[dim]:="\e[2m"}
-: ${c[no_dim]:="\e[22m"}
 
 : ${c[underline]:="\e[4m"}
-: ${c[no_underline]:="\e[24m"}
 
 : ${c[blink]:="\e[5m"}
-: ${c[no_blink]:="\e[25m"}
 
 : ${c[reverse]:="\e[7m"}
-: ${c[no_reverse]:="\e[27m"}
 
 : ${c[hidden]:="\e[8m"}
-: ${c[no_hidden]:="\e[8m"}
-: ${c[visible]:="\e[8m"}
 
 
 # Colors
