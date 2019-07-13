@@ -25,6 +25,7 @@ typeset -gA c
 : ${c[strike]:="\e[9m"}
 : ${c[strikethrough]:="\e[9m"}
 
+: ${c[overline]:="\e[53m"}
 
 
 # Colors
