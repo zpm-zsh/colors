@@ -6,26 +6,38 @@ typeset -gA c
 # Base mods
 
 : ${c[reset]:="[0m"}
+: ${c_reset:="[0m"}
 
 : ${c[bold]:="[1m"}
+: ${c_bold:="[1m"}
 
 : ${c[dim]:="[2m"}
+: ${c_dim:="[2m"}
 
 : ${c[italic]:="[3m"}
+: ${c_italic:="[3m"}
 : ${c[coursive]:="[3m"}
+: ${c_coursive:="[3m"}
 
 : ${c[underline]:="[4m"}
+: ${c_underline:="[4m"}
 
 : ${c[blink]:="[5m"}
+: ${c_blink:="[5m"}
 
 : ${c[reverse]:="[7m"}
+: ${c_reverse:="[7m"}
 
 : ${c[hidden]:="[8m"}
+: ${c_hidden:="[8m"}
 
 : ${c[strike]:="[9m"}
+: ${c_strike:="[9m"}
 : ${c[strikethrough]:="[9m"}
+: ${c_strikethrough:="[9m"}
 
 : ${c[overline]:="[53m"}
+: ${c_overline:="[53m"}
 
 
 # Colors
