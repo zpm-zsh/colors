@@ -1,9 +1,5 @@
-# colors
-Enhanced colors for zsh
+#!/usr/bin/env zsh
 
-### Usage
-
-```bash
 echo $c_bold Bold text $c[reset]
 echo $c_dim Dim text $c[reset]
 echo $c_italic Italic or Coursive text $c[reset]
@@ -16,12 +12,3 @@ echo $c_overline Overlined text $c[reset]
 echo
 echo $c[red] Red color $c[reset]
 echo $c[bg_red] Red Background $c[reset]
-```
-![Screenshot](./screenshot.png)
-
-Posible colors: 
-
-* `black`, `white`,
-* `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `grey` and `light_` variants for them
-
-
