@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-CLICOLOR=${CLICOLOR:=1}
+: ${CLICOLOR:=1}
 
 if [[ -n "$NO_COLOR" ]]; then
   CLICOLOR=0
