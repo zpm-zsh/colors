@@ -27,6 +27,9 @@ c_blink="[5m"
 
 c[reverse]="[7m"
 c_reverse="[7m"
+c[inverse]="[7m"
+c_inverse="[7m"
+
 
 c[hidden]="[8m"
 c_hidden="[8m"
@@ -35,6 +38,10 @@ c[strike]="[9m"
 c_strike="[9m"
 c[strikethrough]="[9m"
 c_strikethrough="[9m"
+
+
+c[double_underline]="[4;21m"
+c_double_underline="[4;21m"
 
 c[overline]="[53m"
 c_overline="[53m"
@@ -53,20 +60,18 @@ c[yellow]="[33m"
 c[blue]="[34m"
 c[magenta]="[35m"
 c[cyan]="[36m"
-c[light_grey]="[37m"
+c[bright_grey]="[37m"
 
 c[grey]="[30;90m"
-c[light_red]="[31;91m"
-c[light_green]="[32;92m"
-c[light_yellow]="[33;93m"
-c[light_blue]="[34;94m"
-c[light_magenta]="[35;95m"
-c[light_cyan]="[36;96m"
+c[bright_red]="[31;91m"
+c[bright_green]="[32;92m"
+c[bright_yellow]="[33;93m"
+c[bright_blue]="[34;94m"
+c[bright_magenta]="[35;95m"
+c[bright_cyan]="[36;96m"
 c[white]="[37;97m"
 
-
 ## Background
-
 c[bg_default]="[49m"
 
 c[bg_black]="[40m"
@@ -76,14 +81,14 @@ c[bg_yellow]="[43m"
 c[bg_blue]="[44m"
 c[bg_magenta]="[45m"
 c[bg_cyan]="[46m"
-c[bg_light_grey]="[47m"
+c[bg_bright_grey]="[47m"
 
 c[bg_grey]="[40;100m"
-c[bg_light_red]="[41;101m"
-c[bg_light_green]="[42;102m"
-c[bg_light_yellow]="[43;103m"
-c[bg_light_blue]="[44;104m"
-c[bg_light_magenta]="[45;105m"
-c[bg_light_cyan]="[46;106m"
+c[bg_bright_red]="[41;101m"
+c[bg_bright_green]="[42;102m"
+c[bg_bright_yellow]="[43;103m"
+c[bg_bright_blue]="[44;104m"
+c[bg_bright_magenta]="[45;105m"
+c[bg_bright_cyan]="[46;106m"
 c[bg_white]="[47;107m"
 
