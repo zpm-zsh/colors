@@ -15,44 +15,58 @@ if [[ "$CLICOLOR" == "1" ]]; then
   # Base mods
   
   c[reset]="[0m"
+  typeset -g c_reset
   c_reset="[0m"
   
   c[bold]="[1m"
+  typeset -g c_bold
   c_bold="[1m"
   
   c[dim]="[2m"
+  typeset -g c_dim
   c_dim="[2m"
   
   c[italic]="[3m"
+  typeset -g c_italic
   c_italic="[3m"
   c[coursive]="[3m"
+  typeset -g c_coursive
   c_coursive="[3m"
   
   c[underline]="[4m"
+  typeset -g c_underline
   c_underline="[4m"
   
   c[blink]="[5m"
+  typeset -g c_blink
   c_blink="[5m"
   
   c[reverse]="[7m"
+  typeset -g c_reverse
   c_reverse="[7m"
   c[inverse]="[7m"
+  typeset -g c_inverse
   c_inverse="[7m"
   
   
   c[hidden]="[8m"
+  typeset -g c_hidden
   c_hidden="[8m"
   
   c[strike]="[9m"
+  typeset -g c_strike
   c_strike="[9m"
   c[strikethrough]="[9m"
+  typeset -g c_strikethrough
   c_strikethrough="[9m"
   
   
   c[double_underline]="[4;21m"
+  typeset -g c_double_underline
   c_double_underline="[4;21m"
   
   c[overline]="[53m"
+  typeset -g c_overline
   c_overline="[53m"
   
   ## Text
