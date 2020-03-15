@@ -9,92 +9,77 @@ fi
 export CLICOLOR
 
 if [[ "$CLICOLOR" == "1" ]]; then
-  
-  typeset -gA c
-  
-  # Base mods
-  
-  c[reset]="[0m"
+
+  typeset -Ag c=(
+    [reset]="[0m"
+    [bold]="[1m"
+    [dim]="[2m"
+    [italic]="[3m"
+    [coursive]="[3m"
+    [underline]="[4m"
+    [blink]="[5m"
+    [reverse]="[7m"
+    [inverse]="[7m"
+    [hidden]="[8m"
+    [strike]="[9m"
+    [strikethrough]="[9m"
+    [double_underline]="[4;21m"
+    [overline]="[53m"
+    [default]="[39m"
+
+    [black]="[30m"
+    [red]="[31m"
+    [green]="[32m"
+    [yellow]="[33m"
+    [blue]="[34m"
+    [magenta]="[35m"
+    [cyan]="[36m"
+    [bright_grey]="[37m"
+
+    [grey]="[30;90m"
+    [bright_red]="[31;91m"
+    [bright_green]="[32;92m"
+    [bright_yellow]="[33;93m"
+    [bright_blue]="[34;94m"
+    [bright_magenta]="[35;95m"
+    [bright_cyan]="[36;96m"
+    [white]="[37;97m"
+
+    [bg_default]="[49m"
+
+    [bg_black]="[40m"
+    [bg_red]="[41m"
+    [bg_green]="[42m"
+    [bg_yellow]="[43m"
+    [bg_blue]="[44m"
+    [bg_magenta]="[45m"
+    [bg_cyan]="[46m"
+    [bg_bright_grey]="[47m"
+
+    [bg_grey]="[40;100m"
+    [bg_bright_red]="[41;101m"
+    [bg_bright_green]="[42;102m"
+    [bg_bright_yellow]="[43;103m"
+    [bg_bright_blue]="[44;104m"
+    [bg_bright_magenta]="[45;105m"
+    [bg_bright_cyan]="[46;106m"
+    [bg_white]="[47;107m"
+
+  )
+
   typeset -g c_reset="[0m"
-  
-  c[bold]="[1m"
   typeset -g c_bold="[1m"
-  
-  c[dim]="[2m"
   typeset -g c_dim="[2m"
-  
-  c[italic]="[3m"
   typeset -g c_italic="[3m"
-  c[coursive]="[3m"
   typeset -g c_coursive="[3m"
-  
-  c[underline]="[4m"
   typeset -g c_underline="[4m"
-  
-  c[blink]="[5m"
   typeset -g c_blink="[5m"
-  
-  c[reverse]="[7m"
   typeset -g c_reverse="[7m"
-  c[inverse]="[7m"
   typeset -g c_inverse="[7m"
-  
-  
-  c[hidden]="[8m"
   typeset -g c_hidden="[8m"
-  
-  c[strike]="[9m"
   typeset -g c_strike="[9m"
-  c[strikethrough]="[9m"
   typeset -g c_strikethrough="[9m"
-  
-  
-  c[double_underline]="[4;21m"
   typeset -g c_double_underline="[4;21m"
-  
-  c[overline]="[53m"
   typeset -g c_overline="[53m"
-  
-  ## Text
-  
-  c[default]="[39m"
-  
-  c[black]="[30m"
-  c[red]="[31m"
-  c[green]="[32m"
-  c[yellow]="[33m"
-  c[blue]="[34m"
-  c[magenta]="[35m"
-  c[cyan]="[36m"
-  c[bright_grey]="[37m"
-  
-  c[grey]="[30;90m"
-  c[bright_red]="[31;91m"
-  c[bright_green]="[32;92m"
-  c[bright_yellow]="[33;93m"
-  c[bright_blue]="[34;94m"
-  c[bright_magenta]="[35;95m"
-  c[bright_cyan]="[36;96m"
-  c[white]="[37;97m"
-  
-  ## Background
-  c[bg_default]="[49m"
-  
-  c[bg_black]="[40m"
-  c[bg_red]="[41m"
-  c[bg_green]="[42m"
-  c[bg_yellow]="[43m"
-  c[bg_blue]="[44m"
-  c[bg_magenta]="[45m"
-  c[bg_cyan]="[46m"
-  c[bg_bright_grey]="[47m"
-  
-  c[bg_grey]="[40;100m"
-  c[bg_bright_red]="[41;101m"
-  c[bg_bright_green]="[42;102m"
-  c[bg_bright_yellow]="[43;103m"
-  c[bg_bright_blue]="[44;104m"
-  c[bg_bright_magenta]="[45;105m"
-  c[bg_bright_cyan]="[46;106m"
-  c[bg_white]="[47;107m"
+
 fi
