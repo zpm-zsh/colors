@@ -6,7 +6,7 @@ if [[ -n "$NO_COLOR" ]]; then
   export CLICOLOR=0
 fi
 
-if [[ "$CLICOLOR" == "1" ]]; then
+if [[ "$CLICOLOR" != '0' ]]; then
   typeset -Ag c=(
     reset '[0m'
     bold '[1m'
