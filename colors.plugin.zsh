@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-: ${CLICOLOR:=1}
-
 if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   export CLICOLOR=1
   typeset -Ag c=(
