@@ -69,21 +69,6 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_bright_cyan '[46;106m'
     bg_white '[47;107m'
   )
-
-  typeset -g c_reset='[0m'
-  typeset -g c_bold='[1m'
-  typeset -g c_dim='[2m'
-  typeset -g c_italic='[3m'
-  typeset -g c_coursive='[3m'
-  typeset -g c_underline='[4m'
-  typeset -g c_blink='[5m'
-  typeset -g c_reverse='[7m'
-  typeset -g c_inverse='[7m'
-  typeset -g c_hidden='[8m'
-  typeset -g c_strike='[9m'
-  typeset -g c_strikethrough='[9m'
-  typeset -g c_double_underline='[4;21m'
-  typeset -g c_overline='[53m'
 else
   export CLICOLOR=0
 fi
