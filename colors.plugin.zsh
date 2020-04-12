@@ -2,11 +2,8 @@
 
 : ${CLICOLOR:=1}
 
-if [[ -n "$NO_COLOR" ]]; then
-  export CLICOLOR=0
-fi
-
-if [[ "$CLICOLOR" != '0' ]]; then
+if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
+  export CLICOLOR=1
   typeset -Ag c=(
     reset '[0m'
     bold '[1m'
@@ -89,4 +86,7 @@ if [[ "$CLICOLOR" != '0' ]]; then
   typeset -g c_strikethrough='[9m'
   typeset -g c_double_underline='[4;21m'
   typeset -g c_overline='[53m'
+else
+  export CLICOLOR=0
 fi
+
