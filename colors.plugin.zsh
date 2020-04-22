@@ -71,5 +71,6 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   )
 else
   export CLICOLOR=0
+  export NO_COLOR=1
 fi
 
