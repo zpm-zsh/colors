@@ -25,3 +25,7 @@ Posible colors:
 * `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `grey` and `light_` variants for them
 
 
+# Note
+
+Load this plugin before others otherwise plugins can't use it
+
