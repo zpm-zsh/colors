@@ -2,7 +2,7 @@
 
 if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   export CLICOLOR=1
-  typeset -Ag c=(
+  typeset -Ag c; c=(
     reset '[0m'
     bold '[1m'
     dim '[2m'
