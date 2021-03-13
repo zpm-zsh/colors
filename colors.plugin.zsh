@@ -51,6 +51,8 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     bg_default '[49m'
 
+    default '39'
+
     bg_black '[40m'
     bg_red '[41m'
     bg_green '[42m'
@@ -78,6 +80,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_magenta '35'
     raw_cyan '36'
     raw_bright_grey '37'
+
     raw_grey '30;90'
     raw_bright_red '31;91'
     raw_bright_green '32;92'
@@ -86,7 +89,9 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bright_magenta '35;95'
     raw_bright_cyan '36;96'
     raw_white '37;97'
+
     raw_bg_default '49'
+
     raw_bg_black '40'
     raw_bg_red '41'
     raw_bg_green '42'
@@ -94,6 +99,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_blue '44'
     raw_bg_magenta '45'
     raw_bg_cyan '46'
+
     raw_bg_bright_grey '47'
     raw_bg_grey '40;100'
     raw_bg_bright_red '41;101'
