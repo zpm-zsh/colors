@@ -4,28 +4,41 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   export CLICOLOR=1
   typeset -Ag c; c=(
     reset '[0m'
+
+    normal '[22m'
+
     bold '[1m'
+    no_bold '[22m'
+
     dim '[2m'
     faint '[2m'
-    normal '[22m'
+    no_dim '[22m'
+    no_faint '[22m'
+
     italic '[3m'
     coursive '[3m'
     no_italic '[23m'
     no_coursive '[23m'
+
     underline '[4m'
     no_underline '[24m'
+
     blink '[5m'
     no_blink '[25m'
+
     reverse '[7m'
     inverse '[7m'
     no_reverse '[27m'
     no_inverse '[27m'
+
     hidden '[8m'
     no_hidden '[28m'
+
     strike '[9m'
     strikethrough '[9m'
     no_strike '[29m'
     no_strikethrough '[29m'
+
     double_underline '[4;21m'
     overline '[53m'
 
@@ -51,8 +64,6 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     bg_default '[49m'
 
-    default '39'
-
     bg_black '[40m'
     bg_red '[41m'
     bg_green '[42m'
@@ -71,6 +82,50 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_bright_cyan '[46;106m'
     bg_white '[47;107m'
 
+
+
+
+
+    raw_reset '0'
+
+    raw_normal '22'
+
+    raw_bold '1'
+    raw_no_bold '22'
+
+    raw_dim '2'
+    raw_faint '2'
+    raw_no_dim '22'
+    raw_no_faint '22'
+
+    raw_italic '3'
+    raw_coursive '3'
+    raw_no_italic '23'
+    raw_no_coursive '23'
+
+    raw_underline '4'
+    raw_no_underline '24'
+
+    raw_blink '5'
+    raw_no_blink '25'
+
+    raw_reverse '7'
+    raw_inverse '7'
+    raw_no_reverse '27'
+    raw_no_inverse '27'
+
+    raw_hidden '8'
+    raw_no_hidden '28'
+
+    raw_strike '9'
+    raw_strikethrough '9'
+    raw_no_strike '29'
+    raw_no_strikethrough '29'
+
+    raw_double_underline '4;21'
+    raw_overline '53'
+
+    raw_default '39'
 
     raw_black '30'
     raw_red '31'
@@ -99,8 +154,8 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_blue '44'
     raw_bg_magenta '45'
     raw_bg_cyan '46'
-
     raw_bg_bright_grey '47'
+
     raw_bg_grey '40;100'
     raw_bg_bright_red '41;101'
     raw_bg_bright_green '42;102'
@@ -114,4 +169,3 @@ else
   export CLICOLOR=0
   export NO_COLOR=1
 fi
-
