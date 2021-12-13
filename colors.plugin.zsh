@@ -3,43 +3,26 @@
 if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   export CLICOLOR=1
   typeset -Ag c; c=(
-    reset '[0m'
-
-    normal '[22m'
-
     bold '[1m'
-    no_bold '[22m'
-
     dim '[2m'
-    faint '[2m'
-    no_dim '[22m'
-    no_faint '[22m'
-
-    italic '[3m'
     coursive '[3m'
-    no_italic '[23m'
-    no_coursive '[23m'
-
     underline '[4m'
-    no_underline '[24m'
-
     blink '[5m'
-    no_blink '[25m'
-
-    reverse '[7m'
     inverse '[7m'
-    no_reverse '[27m'
-    no_inverse '[27m'
-
     hidden '[8m'
-    no_hidden '[28m'
-
     strike '[9m'
-    strikethrough '[9m'
-    no_strike '[29m'
-    no_strikethrough '[29m'
-
     double_underline '[4;21m'
+
+    reset '[0m'
+    reset_text '[22m'
+
+    no_coursive '[23m'
+    no_underline '[24m'
+    no_blink '[25m'
+    no_inverse '[27m'
+    no_hidden '[28m'
+    no_strike '[29m'
+
     overline '[53m'
 
     default '[39m'
@@ -62,7 +45,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bright_cyan '[36;96m'
     white '[37;97m'
 
-    bg_default '[49m'
+    bg_reset '[49m'
 
     bg_black '[40m'
     bg_red '[41m'
@@ -86,43 +69,26 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
 
 
-    raw_reset '0'
-
-    raw_normal '22'
-
     raw_bold '1'
-    raw_no_bold '22'
-
     raw_dim '2'
-    raw_faint '2'
-    raw_no_dim '22'
-    raw_no_faint '22'
-
-    raw_italic '3'
     raw_coursive '3'
-    raw_no_italic '23'
-    raw_no_coursive '23'
-
     raw_underline '4'
-    raw_no_underline '24'
-
     raw_blink '5'
-    raw_no_blink '25'
-
-    raw_reverse '7'
     raw_inverse '7'
-    raw_no_reverse '27'
-    raw_no_inverse '27'
-
     raw_hidden '8'
-    raw_no_hidden '28'
-
     raw_strike '9'
-    raw_strikethrough '9'
-    raw_no_strike '29'
-    raw_no_strikethrough '29'
-
     raw_double_underline '4;21'
+
+    raw_reset '0'
+    raw_reset_text '22'
+
+    raw_no_coursive '23'
+    raw_no_underline '24'
+    raw_no_blink '25'
+    raw_no_inverse '27'
+    raw_no_hidden '28'
+    raw_no_strike '29'
+
     raw_overline '53'
 
     raw_default '39'
@@ -145,7 +111,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bright_cyan '36;96'
     raw_white '37;97'
 
-    raw_bg_default '49'
+    raw_bg_reset '49'
 
     raw_bg_black '40'
     raw_bg_red '41'
