@@ -11,7 +11,9 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     inverse '[7m'
     hidden '[8m'
     strike '[9m'
+
     double_underline '[4;21m'
+    overline '[53m'
 
     reset '[0m'
     reset_text '[22m'
@@ -23,27 +25,26 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     no_hidden '[28m'
     no_strike '[29m'
 
-    overline '[53m'
 
     default '[39m'
 
-    black '[30m'
+    base0 '[30m'
     red '[31m'
     green '[32m'
     yellow '[33m'
     blue '[34m'
     magenta '[35m'
     cyan '[36m'
-    bright_grey '[37m'
+    base2 '[37m'
 
-    grey '[30;90m'
-    bright_red '[31;91m'
-    bright_green '[32;92m'
-    bright_yellow '[33;93m'
-    bright_blue '[34;94m'
-    bright_magenta '[35;95m'
-    bright_cyan '[36;96m'
-    white '[37;97m'
+    base1 '[30;90m'
+    light_red '[31;91m'
+    light_green '[32;92m'
+    light_yellow '[33;93m'
+    light_blue '[34;94m'
+    light_magenta '[35;95m'
+    light_cyan '[36;96m'
+    base3 '[37;97m'
 
     bg_reset '[49m'
 
@@ -54,15 +55,15 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_blue '[44m'
     bg_magenta '[45m'
     bg_cyan '[46m'
-    bg_bright_grey '[47m'
+    bg_light_grey '[47m'
 
     bg_grey '[40;100m'
-    bg_bright_red '[41;101m'
-    bg_bright_green '[42;102m'
-    bg_bright_yellow '[43;103m'
-    bg_bright_blue '[44;104m'
-    bg_bright_magenta '[45;105m'
-    bg_bright_cyan '[46;106m'
+    bg_light_red '[41;101m'
+    bg_light_green '[42;102m'
+    bg_light_yellow '[43;103m'
+    bg_light_blue '[44;104m'
+    bg_light_magenta '[45;105m'
+    bg_light_cyan '[46;106m'
     bg_white '[47;107m'
 
 
@@ -100,15 +101,15 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_blue '34'
     raw_magenta '35'
     raw_cyan '36'
-    raw_bright_grey '37'
+    raw_light_grey '37'
 
     raw_grey '30;90'
-    raw_bright_red '31;91'
-    raw_bright_green '32;92'
-    raw_bright_yellow '33;93'
-    raw_bright_blue '34;94'
-    raw_bright_magenta '35;95'
-    raw_bright_cyan '36;96'
+    raw_light_red '31;91'
+    raw_light_green '32;92'
+    raw_light_yellow '33;93'
+    raw_light_blue '34;94'
+    raw_light_magenta '35;95'
+    raw_light_cyan '36;96'
     raw_white '37;97'
 
     raw_bg_reset '49'
@@ -120,16 +121,26 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_blue '44'
     raw_bg_magenta '45'
     raw_bg_cyan '46'
-    raw_bg_bright_grey '47'
+    raw_bg_light_grey '47'
 
     raw_bg_grey '40;100'
-    raw_bg_bright_red '41;101'
-    raw_bg_bright_green '42;102'
-    raw_bg_bright_yellow '43;103'
-    raw_bg_bright_blue '44;104'
-    raw_bg_bright_magenta '45;105'
-    raw_bg_bright_cyan '46;106'
+    raw_bg_light_red '41;101'
+    raw_bg_light_green '42;102'
+    raw_bg_light_yellow '43;103'
+    raw_bg_light_blue '44;104'
+    raw_bg_light_magenta '45;105'
+    raw_bg_light_cyan '46;106'
     raw_bg_white '47;107'
+
+
+    black 'Deprecated[30m'
+
+    light_grey 'Deprecated[37m'
+
+    grey 'Deprecated[30;90m'
+
+    white 'Deprecated[37;97m'
+
   )
 else
   export CLICOLOR=0
