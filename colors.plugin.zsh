@@ -125,13 +125,14 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
 
     black 'Deprecated[30m'
-
     light_grey 'Deprecated[37m'
-
     grey 'Deprecated[30;90m'
-
     white 'Deprecated[37;97m'
 
+    bg_black 'Deprecated[30m'
+    bg_light_grey 'Deprecated[37m'
+    bg_grey 'Deprecated[30;90m'
+    bg_white 'Deprecated[37;97m'
   )
 else
   export CLICOLOR=0
