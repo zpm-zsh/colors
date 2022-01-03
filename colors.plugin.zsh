@@ -32,7 +32,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     blue '[34m'
     magenta '[35m'
     cyan '[36m'
-    base0 '[37m'
+    base1 '[37m'
 
     base2 '[30;90m'
     light_red '[31;91m'
@@ -41,7 +41,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     light_blue '[34;94m'
     light_magenta '[35;95m'
     light_cyan '[36;96m'
-    base1 '[37;97m'
+    base0 '[37;97m'
 
     bg_default '[49m'
     bg_base3 '[40m'

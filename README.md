@@ -68,7 +68,7 @@ Many color schemes define very beautiful colors for your terminal emulator. But 
 
 1. Do not use **Show bold text in bright colors**, or something like this. Bold should be bold, bright should be bright. Do not mix these options.
 
-2. Your color distribution should be like this, from darker to lighter, or from lighter to darker: primary color (base0), background, lighter variant of primary (base1), secondary (base2), foreground, lighter variant of secondary (base3). ![Colors](images/colors.svg)
+2. Your color distribution should be like this, from darker to lighter, or from lighter to darker: primary color (base0), background, lighter variant of primary (base1), secondary (base2), foreground, lighter variant of secondary (base3). ![Colors](images/Diagram.svg)
 
 3. Set-up 6 terminal colors: red, green, blue, yellow, cyan, magenta, and lighter variant of them. This will provide you possibility to set 4 variants of these colors, like `$c[modificator]`: color (color), color with dim modification (color + dim), light color (light_red), light color with dim modification (light_red + dim)
 
