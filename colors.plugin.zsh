@@ -26,6 +26,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     default '[39m'
     base3 '[30m'
+    black '[30m'
     red '[31m'
     green '[32m'
     yellow '[33m'
@@ -33,8 +34,10 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     magenta '[35m'
     cyan '[36m'
     base1 '[37m'
+    light_grey '[37m'
 
     base2 '[30;90m'
+    grey '[30;90m'
     light_red '[31;91m'
     light_green '[32;92m'
     light_yellow '[33;93m'
@@ -42,6 +45,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     light_magenta '[35;95m'
     light_cyan '[36;96m'
     base0 '[37;97m'
+    white '[37;97m'
 
     bg_default '[49m'
     bg_base3 '[40m'
@@ -61,7 +65,6 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_light_magenta '[45;105m'
     bg_light_cyan '[46;106m'
     bg_base1 '[47;107m'
-
 
 
     raw_reset '0'
@@ -87,22 +90,26 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     raw_default '39'
     raw_base3 '30'
+    raw_black '30'
     raw_red '31'
     raw_green '32'
     raw_yellow '33'
     raw_blue '34'
     raw_magenta '35'
     raw_cyan '36'
-    raw_base0 '37'
+    raw_base1 '37'
+    raw_light_grey '37'
 
     raw_base2 '30;90'
+    raw_grey '30;90'
     raw_light_red '31;91'
     raw_light_green '32;92'
     raw_light_yellow '33;93'
     raw_light_blue '34;94'
     raw_light_magenta '35;95'
     raw_light_cyan '36;96'
-    raw_base1 '37;97'
+    raw_base0 '37;97'
+    raw_white '37;97'
 
     raw_bg_default '49'
     raw_bg_base3 '40'
@@ -123,16 +130,6 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_light_cyan '46;106'
     raw_bg_base1 '47;107'
 
-
-    black 'Deprecated[30m'
-    light_grey 'Deprecated[37m'
-    grey 'Deprecated[30;90m'
-    white 'Deprecated[37;97m'
-
-    bg_black 'Deprecated[30m'
-    bg_light_grey 'Deprecated[37m'
-    bg_grey 'Deprecated[30;90m'
-    bg_white 'Deprecated[37;97m'
   )
 else
   export CLICOLOR=0
