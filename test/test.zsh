@@ -18,3 +18,5 @@ echo $c[red] Red color $c[reset]
 echo $c[light_red] Light red color $c[reset]
 echo $c[bg_red] Red background $c[reset]
 echo $c[bg_light_red] Light red background $c[reset]
+echo
+echo default $c[base0] base0 $c[base1] base1 $c[base2] base2 $c[base3] base3
