@@ -26,7 +26,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     default '[39m'
     base3 '[30m'
-    black '[30m'
+    black '[30m' # Do not use this. Just for compatibility
     red '[31m'
     green '[32m'
     yellow '[33m'
@@ -34,10 +34,10 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     magenta '[35m'
     cyan '[36m'
     base1 '[37m'
-    light_grey '[37m'
+    light_grey '[37m' # Do not use this. Just for compatibility
 
     base2 '[30;90m'
-    grey '[30;90m'
+    grey '[30;90m'  # Do not use this. Just for compatibility
     light_red '[31;91m'
     light_green '[32;92m'
     light_yellow '[33;93m'
@@ -45,7 +45,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     light_magenta '[35;95m'
     light_cyan '[36;96m'
     base0 '[37;97m'
-    white '[37;97m'
+    white '[37;97m' # Do not use this. Just for compatibility
 
     bg_default '[49m'
     bg_base3 '[40m'
