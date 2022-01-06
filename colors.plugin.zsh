@@ -33,7 +33,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     blue '[34m'
     magenta '[35m'
     cyan '[36m'
-    base1 '[37m'
+    base0 '[37m'
     light_grey '[37m' # Do not use this. Just for compatibility
 
     base2 '[30;90m'
@@ -44,20 +44,23 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     light_blue '[34;94m'
     light_magenta '[35;95m'
     light_cyan '[36;96m'
-    base0 '[37;97m'
+    base1 '[37;97m'
     white '[37;97m' # Do not use this. Just for compatibility
 
     bg_default '[49m'
     bg_base3 '[40m'
+    bg_black '[40m'
     bg_red '[41m'
     bg_green '[42m'
     bg_yellow '[43m'
     bg_blue '[44m'
     bg_magenta '[45m'
     bg_cyan '[46m'
-    bg_base3 '[47m'
+    bg_base0 '[47m'
+    bg_light_grey '[47m'
 
     bg_base2 '[40;100m'
+    bg_grey '[40;100m'
     bg_light_red '[41;101m'
     bg_light_green '[42;102m'
     bg_light_yellow '[43;103m'
@@ -65,6 +68,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_light_magenta '[45;105m'
     bg_light_cyan '[46;106m'
     bg_base1 '[47;107m'
+    bg_white '[47;107m'
 
 
     raw_reset '0'
@@ -90,38 +94,41 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
 
     raw_default '39'
     raw_base3 '30'
-    raw_black '30'
+    raw_black '30' # Do not use this. Just for compatibility
     raw_red '31'
     raw_green '32'
     raw_yellow '33'
     raw_blue '34'
     raw_magenta '35'
     raw_cyan '36'
-    raw_base1 '37'
-    raw_light_grey '37'
+    raw_base0 '37'
+    raw_light_grey '37' # Do not use this. Just for compatibility
 
     raw_base2 '30;90'
-    raw_grey '30;90'
+    raw_grey '30;90'  # Do not use this. Just for compatibility
     raw_light_red '31;91'
     raw_light_green '32;92'
     raw_light_yellow '33;93'
     raw_light_blue '34;94'
     raw_light_magenta '35;95'
     raw_light_cyan '36;96'
-    raw_base0 '37;97'
-    raw_white '37;97'
+    raw_base1 '37;97'
+    raw_white '37;97' # Do not use this. Just for compatibility
 
     raw_bg_default '49'
     raw_bg_base3 '40'
+    raw_bg_black '40'
     raw_bg_red '41'
     raw_bg_green '42'
     raw_bg_yellow '43'
     raw_bg_blue '44'
     raw_bg_magenta '45'
     raw_bg_cyan '46'
-    raw_bg_base3 '47'
+    raw_bg_base0 '47'
+    raw_bg_light_grey '47'
 
     raw_bg_base2 '40;100'
+    raw_bg_grey '40;100'
     raw_bg_light_red '41;101'
     raw_bg_light_green '42;102'
     raw_bg_light_yellow '43;103'
@@ -129,7 +136,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_light_magenta '45;105'
     raw_bg_light_cyan '46;106'
     raw_bg_base1 '47;107'
-
+    raw_bg_white '47;107'
   )
 else
   export CLICOLOR=0
