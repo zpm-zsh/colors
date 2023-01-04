@@ -79,7 +79,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_base0 '[47;107m'
     bg_light_grey '[47;107m'
 
-    reset '0'
+    raw_reset '0'
 
     raw_bold '1'
     raw_dim '2'
