@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+echo -e "${c[reset]} COLOR  (No color)"
+echo -en "${c[bold]}"
+echo -e "${c[base0]} COLOR BASE0 $c[base1] COLOR BASE1 ${c[base2]} COLOR BASE2 $c[base3] COLOR BASE3 "
+
+echo
+
+echo -e " $c[magenta]COLOR    MAGENTA     ${c[red]}COLOR    RED    $c[orange] COLOR      ORANGE"
+echo
+echo -e "                      ${c[yellow]}COLOR YELLOW"
+echo
+echo -e " $c[chartreuse]COLOR CHARTREUSE     ${c[green]}COLOR  GREEN     $c[springgreen]COLOR SPRINGGREEN"
+echo
+echo -e "                      ${c[cyan]}COLOR   CYAN"
+echo
+echo -e " $c[dodgerblue]COLOR DODGERBLUE     ${c[blue]}COLOR   BLUE     $c[purple]COLOR      PURPLE"
+echo
+echo -e "                      ${c[violet]}COLOR VIOLET"
