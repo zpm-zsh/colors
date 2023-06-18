@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 echo -e "${c[reset]} COLOR  (No color)"
-echo -en "${c[bold]}"
 echo -e "${c[base1]} COLOR BASE1 $c[base2] COLOR BASE2 ${c[base3]} COLOR BASE3 $c[base4] COLOR BASE4 "
 
 echo
