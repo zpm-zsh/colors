@@ -6,19 +6,19 @@ This document defines the Zpm Color Standard.
 
 ### Using zpm
 
-Add zpm load zpm-zsh/colors into .zshrc
+Add `zpm load zpm-zsh/colors` into `.zshrc`
 
 ### Using oh-my-zsh
 
-Execute `git clone https://github.com/zpm-zsh/colors ~/.oh-my-zsh/custom/plugins/colors`. Add colors into plugins array in .zshrc
+Execute `git clone https://github.com/zpm-zsh/colors ~/.oh-my-zsh/custom/plugins/colors`. Add colors into plugins array in `.zshrc`
 
 ### Using antigen
 
-Add antigen bundle zpm-zsh/colors into .zshrc
+Add `antigen bundle zpm-zsh/colors` into `.zshrc`
 
 ### Using zgen
 
-Add zgen load zpm-zsh/colors into .zshrc
+Add `zgen load zpm-zsh/colors` into `.zshrc`
 
 ### Note
 
@@ -27,24 +27,27 @@ Load this plugin before others otherwise plugins can't use it
 ## Usage
 
 ```bash
+echo $c[reset] Reset all
 echo $c[default] Default text color $c[reset]
 echo $c[bold] Bold text $c[reset]
-echo $c[dim] Dim text $c[reset]
-echo $c[coursive] Coursive text $c[reset]
+echo $c[dim] Dim text $c[reset] # or $c[faint]
+echo $c[coursive] Coursive text $c[reset] # or $c[italic]
 echo $c[underline] Underlined text $c[reset]
 echo $c[blink] Blink text $c[reset] "<- Blink"
-echo $c[inverse] Inverse text $c[reset]
-echo $c[hidden] Hidden text $c[reset] "<- Hidden text"
-echo $c[strike] Strike text $c[reset]
+echo $c[inverse] Inverse text $c[reset] # or $c[reverse]
+echo $c[hidden] Hidden text $c[reset] "<- Hidden text" # or $c[conceal]
+echo $c[strike] Strike text $c[reset] # or $c[strikethrough]
 echo
 echo $c[double_underline] Double underlined text $c[reset]
 echo
 echo $c[overline] Overlined text $c[reset]
 echo
+echo BASE COLOR $c[base1] BASE1 COLOR $c[base2] BASE2 COLOR $c[base3] BASE3 COLOR $c[base4] BASE4 COLOR
+echo
 echo $c[red] Red color $c[reset]
-echo $c[light_red] Light red color $c[reset]
+echo $c[orange] Orange color $c[reset]
 echo $c[bg_red] Red background $c[reset]
-echo $c[bg_light_red] Light red background $c[reset]
+echo $c[bg_orange] Orange background $c[reset]
 ```
 
 ![Screenshot](./images/example.png)
@@ -52,11 +55,11 @@ echo $c[bg_light_red] Light red background $c[reset]
 ## Aviable modificators
 
 * Self-descriptive modificators: `bold`, `dim`, `coursive`, `underline`, `blink`, `inverse`, `hidden`, `strike`, `double_underline`, `overline`
-* Base colors: `base0`, `base1`, `base2`, `base3`
-* 6 colors: `red`, `green`, `blue`, `yellow`, `cyan`, `magenta`
-* `light_` variants for 6 colors: `light_red`, `light_green`, `light_blue`, `light_yellow`, `light_cyan`, `light_magenta`
-* 6 background colors with `bg_` prefix: `bg_red`, `bg_green`, `bg_blue`, `bg_yellow`, `bg_cyan`, `bg_magenta`
-* 6 light background colors with `bg_light_` prefix: `bg_light_red`, `bg_light_green`, `bg_light_blue`, `bg_light_yellow`, `bg_light_cyan`, `bg_light_magenta`
+* Base colors: `base1`, `base2`, `base3`, `base4`
+* 6 base colors: `red`, `green`, `blue`, `yellow`, `cyan`, `violet`
+* 6 additional colors: `orange`, `chartreuse`, `springgreen`, `dodgerblue`, `purple`, `magenta`
+* 6 base background colors with `bg_` prefix: `bg_red`, `bg_green`, `bg_blue`, `bg_yellow`, `bg_cyan`, `bg_violet`
+* 6 additional background colors with `bg_` prefix: `bg_orange`, `bg_chartreuse`, `bg_springgreen`, `bg_dodgerblue`, `bg_purple`, `bg_magenta`
 
 ## Who we need this?
 
@@ -68,6 +71,6 @@ Many color schemes define very beautiful colors for your terminal emulator. But 
 
 1. Do not use **Show bold text in bright colors**, or something like this. Bold should be bold, bright should be bright. Do not mix these options.
 
-2. Your color distribution should be like this, from darker to lighter, or from lighter to darker: background, primary color (base0), lighter variant of primary (base1), secondary (base2), lighter variant of secondary (base3), foreground. <br><br>![Colors](images/Diagram.svg)
+2. Your color distribution should be like this, from darker to lighter, or from lighter to darker: background, primary color (base1), lighter variant of primary (base2), secondary (base3), lighter variant of secondary (base4), foreground. <br><br>![Colors](images/Diagram.svg)
 
-3. Set-up 6 terminal colors: red, green, blue, yellow, cyan, magenta, and lighter variant of them. This will provide you possibility to set 4 variants of these colors, like `$c[modificator]`: color (color), color with dim modification (color + dim), light color (light_red), light color with dim modification (light_red + dim)
+3. Set-up 6 terminal colors: red, green, blue, yellow, cyan, violet, and lighter variant of them as 6 additional colors: orange, chartreuse, springgreen, dodgerblue, purple, magenta. This will provide you possibility to set 24 colors, using `$c[modificator]`: 6 base colors + 6 additional colors, 12 colors with dim modification (color + dim).
