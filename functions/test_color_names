@@ -1,18 +1,17 @@
 #!/usr/bin/env zsh
 
-echo -e "${c[reset]} COLOR  (No color)"
-echo -e "${c[base1]} COLOR BASE1 $c[base2] COLOR BASE2 ${c[base3]} COLOR BASE3 $c[base4] COLOR BASE4 "
+echo -e "${c[base1]} COLOR BASE1 ${c[reset]}  ${c[base2]} COLOR BASE2 ${c[reset]}  ${c[base3]} COLOR BASE3 ${c[reset]}  ${c[base4]} COLOR BASE4 ${c[reset]}"
 
 echo
 
-echo -e " $c[magenta]COLOR    MAGENTA     ${c[red]}COLOR    RED    $c[orange] COLOR      ORANGE"
+echo -e "$c[magenta] COLOR    MAGENTA ${c[reset]}   ${c[red]} COLOR    RED ${c[reset]}   $c[orange] COLOR      ORANGE ${c[reset]}"
 echo
-echo -e "                      ${c[yellow]}COLOR YELLOW"
+echo -e "                     ${c[yellow]} COLOR YELLOW ${c[reset]}"
 echo
-echo -e " $c[chartreuse]COLOR CHARTREUSE     ${c[green]}COLOR  GREEN     $c[springgreen]COLOR SPRINGGREEN"
+echo -e "$c[chartreuse] COLOR CHARTREUSE ${c[reset]}   ${c[green]} COLOR  GREEN ${c[reset]}   $c[springgreen] COLOR SPRINGGREEN ${c[reset]}"
 echo
-echo -e "                      ${c[cyan]}COLOR   CYAN"
+echo -e "                     ${c[cyan]} COLOR   CYAN ${c[reset]}"
 echo
-echo -e " $c[dodgerblue]COLOR DODGERBLUE     ${c[blue]}COLOR   BLUE     $c[purple]COLOR      PURPLE"
+echo -e "$c[dodgerblue] COLOR DODGERBLUE ${c[reset]}   ${c[blue]} COLOR   BLUE ${c[reset]}   $c[purple] COLOR      PURPLE ${c[reset]}"
 echo
-echo -e "                      ${c[violet]}COLOR VIOLET"
+echo -e "                     ${c[violet]} COLOR VIOLET ${c[reset]}"

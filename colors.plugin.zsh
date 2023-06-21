@@ -7,7 +7,8 @@ if [[ $PMSPEC != *f* ]] {
 autoload -Uz colortrans test_color_24bit test_color_codes test_color_names
 
 if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
-  export CLICOLOR=1
+  export CLICOLOR='true'
+  export TERM_ITALICS='true'
   typeset -Ag c; c=(
     reset '[0m'
 
