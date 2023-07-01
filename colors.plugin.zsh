@@ -4,7 +4,11 @@ if [[ $PMSPEC != *f* ]] {
   fpath+=( "${0:h}/functions" )
 }
 
-autoload -Uz colortrans test_color_24bit test_color_codes test_color_names
+if [[ $PMSPEC != *b* ]] {
+  PATH=$PATH:"${0:h}/bin"
+}
+
+autoload -Uz test_color_24bit test_color_codes test_color_names
 
 if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
   export CLICOLOR='true'
