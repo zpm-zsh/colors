@@ -56,10 +56,10 @@ echo $c[bg_orange] Orange background $c[reset]
 
 * Self-descriptive modificators: `bold`, `dim`, `coursive`, `underline`, `blink`, `inverse`, `hidden`, `strike`, `double_underline`, `overline`
 * Base colors: `base1`, `base2`, `base3`, `base4`
-* 6 base colors: `red`, `green`, `blue`, `yellow`, `cyan`, `violet`
-* 6 additional colors: `orange`, `chartreuse`, `springgreen`, `dodgerblue`, `purple`, `magenta`
+* 6 base colors: `red`, `green`, `blue`, `yellow`, `cyan`, `magenta`
+* 6 additional colors: `orange`, `chartreuse`, `springgreen`, `dodgerblue`, `violet`, `rose`
 * 6 base background colors with `bg_` prefix: `bg_red`, `bg_green`, `bg_blue`, `bg_yellow`, `bg_cyan`, `bg_violet`
-* 6 additional background colors with `bg_` prefix: `bg_orange`, `bg_chartreuse`, `bg_springgreen`, `bg_dodgerblue`, `bg_purple`, `bg_magenta`
+* 6 additional background colors with `bg_` prefix: `bg_orange`, `bg_chartreuse`, `bg_springgreen`, `bg_dodgerblue`, `bg_violet`, `bg_rose`
 
 ## Who we need this?
 
@@ -73,4 +73,4 @@ Many color schemes define very beautiful colors for your terminal emulator. But 
 
 2. Your color distribution should be like this, from darker to lighter, or from lighter to darker: background, primary color (base1), lighter variant of primary (base2), secondary (base3), lighter variant of secondary (base4), foreground. <br><br>![Colors](images/Diagram.svg)
 
-3. Set-up 6 terminal colors: red, green, blue, yellow, cyan, violet, and lighter variant of them as 6 additional colors: orange, chartreuse, springgreen, dodgerblue, purple, magenta. This will provide you possibility to set 24 colors, using `$c[modificator]`: 6 base colors + 6 additional colors, 12 colors with dim modification (color + dim).
+3. Set-up 6 terminal colors: red, green, blue, yellow, cyan, magenta, and lighter variant of them as 6 additional colors: orange, chartreuse, springgreen, dodgerblue, violet, rose. This will provide you possibility to set 24 colors, using `$c[modificator]`: 6 base colors + 6 additional colors, 12 colors with dim modification (color + dim).

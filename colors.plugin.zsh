@@ -68,7 +68,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     cyan '[36m'
     dodgerblue '[34;94m'
     blue '[34m'
-    purple '[35;95m'
+    violet '[35;95m'
     magenta '[35m'
 
     light_red '[31;91m' # Do not use this. Just for compatibility
@@ -101,7 +101,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_cyan '[46m'
     bg_dodgerblue '[44;104m'
     bg_blue '[44m'
-    bg_purple '[45;105m'
+    bg_violet '[45;105m'
     bg_magenta '[45m'
 
     bg_light_red '[41;101m' # Do not use this. Just for compatibility
@@ -164,7 +164,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_cyan '36'
     raw_dodgerblue '34;94'
     raw_blue '34'
-    raw_purple '35;95'
+    raw_violet '35;95'
     raw_magenta '35'
 
     raw_light_red '31;91' # Do not use this. Just for compatibility
@@ -195,7 +195,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_cyan '46'
     raw_bg_dodgerblue '44;104'
     raw_bg_blue '44'
-    raw_bg_purple '45;105'
+    raw_bg_violet '45;105'
     raw_bg_magenta '45'
 
 
