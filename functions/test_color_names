@@ -9,7 +9,7 @@ echo -e " ${c[yellow]}COLOR YELLOW   ${c[orange]}COLOR LIGHT YELLOW"
 echo -e " ${c[green]}COLOR GREEN    ${c[chartreuse]}COLOR LIGHT GREEN"
 echo -e " ${c[cyan]}COLOR CYAN     ${c[springgreen]}COLOR LIGHT CYAN"
 echo -e " ${c[blue]}COLOR BLUE     ${c[dodgerblue]}COLOR LIGHT BLUE"
-echo -e " ${c[magenta]}COLOR VIOLET   ${c[violet]}COLOR LIGHT VIOLET"
+echo -e " ${c[magenta]}COLOR MAGENTA  ${c[violet]}COLOR LIGHT MAGENTA"
 
 echo
 
