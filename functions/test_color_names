@@ -4,12 +4,12 @@ echo -e "${c[base1]} COLOR BASE1 ${c[reset]} ${c[base2]} COLOR BASE2 ${c[reset]}
 
 echo
 
-echo -e "${c[red]}COLOR RED      ${c[rose]}COLOR LIGHT RED"
-echo -e "${c[yellow]}COLOR YELLOW   ${c[orange]}COLOR LIGHT YELLOW"
-echo -e "${c[green]}COLOR GREEN    ${c[chartreuse]}COLOR LIGHT GREEN"
-echo -e "${c[cyan]}COLOR CYAN     ${c[springgreen]}COLOR LIGHT CYAN"
-echo -e "${c[blue]}COLOR BLUE     ${c[dodgerblue]}COLOR LIGHT BLUE"
-echo -e "${c[magenta]}COLOR VIOLET   ${c[purple]}COLOR LIGHT VIOLET"
+echo -e " ${c[red]}COLOR RED      ${c[rose]}COLOR LIGHT RED"
+echo -e " ${c[yellow]}COLOR YELLOW   ${c[orange]}COLOR LIGHT YELLOW"
+echo -e " ${c[green]}COLOR GREEN    ${c[chartreuse]}COLOR LIGHT GREEN"
+echo -e " ${c[cyan]}COLOR CYAN     ${c[springgreen]}COLOR LIGHT CYAN"
+echo -e " ${c[blue]}COLOR BLUE     ${c[dodgerblue]}COLOR LIGHT BLUE"
+echo -e " ${c[magenta]}COLOR VIOLET   ${c[purple]}COLOR LIGHT VIOLET"
 
 echo
 
