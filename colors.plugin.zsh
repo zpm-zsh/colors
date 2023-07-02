@@ -58,18 +58,18 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     black '[30m' # Do not use this. Just for compatibility
 
     # Colors
+    magenta '[31;91m'
     red '[31m'
-    orange '[31;91m'
+    orange '[33;93m'
     yellow '[33m'
-    chartreuse '[33;93m'
+    chartreuse '[32;92m'
     green '[32m'
-    springgreen '[32;92m'
+    springgreen '[36;96m'
     cyan '[36m'
-    dodgerblue '[36;96m'
+    dodgerblue '[34;94m'
     blue '[34m'
-    purple '[34;94m'
+    purple '[35;95m'
     violet '[35m'
-    magenta '[35;95m'
 
     light_red '[31;91m' # Do not use this. Just for compatibility
     light_green '[32;92m' # Do not use this. Just for compatibility
@@ -91,18 +91,18 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_black '[40m' # Do not use this. Just for compatibility
 
     # Background Colors
+    bg_magenta '[41;101m'
     bg_red '[41m'
-    bg_orange '[41;101m'
+    bg_orange '[43;103m'
     bg_yellow '[43m'
-    bg_chartreuse '[43;103m'
+    bg_chartreuse '[42;102m'
     bg_green '[42m'
-    bg_springgreen '[42;102m'
+    bg_springgreen '[46;106m'
     bg_cyan '[46m'
-    bg_dodgerblue '[46;106m'
+    bg_dodgerblue '[44;104m'
     bg_blue '[44m'
-    bg_purple '[44;104m'
+    bg_purple '[45;105m'
     bg_violet '[45m'
-    bg_magenta '[45;105m'
 
     bg_light_red '[41;101m' # Do not use this. Just for compatibility
     bg_light_green '[42;102m' # Do not use this. Just for compatibility
@@ -154,18 +154,18 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_base4 '30'
     raw_black '30' # Do not use this. Just for compatibility
 
+    raw_magenta '31;91'
     raw_red '31'
-    raw_orange '31;91'
+    raw_orange '33;93'
     raw_yellow '33'
-    raw_chartreuse '33;93'
+    raw_chartreuse '32;92'
     raw_green '32'
-    raw_springgreen '32;92'
+    raw_springgreen '36;96'
     raw_cyan '36'
-    raw_dodgerblue '36;96'
+    raw_dodgerblue '34;94'
     raw_blue '34'
-    raw_purple '34;94'
+    raw_purple '35;95'
     raw_violet '35'
-    raw_magenta '35;95'
 
     raw_light_red '31;91' # Do not use this. Just for compatibility
     raw_light_green '32;92' # Do not use this. Just for compatibility
@@ -185,18 +185,18 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_base4 '40'
     raw_bg_black '40' # Do not use this. Just for compatibility
 
+    raw_bg_magenta '41;101'
     raw_bg_red '41'
-    raw_bg_orange '41;101'
+    raw_bg_orange '43;103'
     raw_bg_yellow '43'
-    raw_bg_chartreuse '43;103'
+    raw_bg_chartreuse '42;102'
     raw_bg_green '42'
-    raw_bg_springgreen '42;102'
+    raw_bg_springgreen '46;106'
     raw_bg_cyan '46'
-    raw_bg_dodgerblue '46;106'
+    raw_bg_dodgerblue '44;104'
     raw_bg_blue '44'
-    raw_bg_purple '44;104'
+    raw_bg_purple '45;105'
     raw_bg_violet '45'
-    raw_bg_magenta '45;105'
 
 
     raw_bg_light_red '41;101' # Do not use this. Just for compatibility
