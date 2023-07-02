@@ -58,7 +58,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     black '[30m' # Do not use this. Just for compatibility
 
     # Colors
-    magenta '[31;91m'
+    rose '[31;91m'
     red '[31m'
     orange '[33;93m'
     yellow '[33m'
@@ -69,7 +69,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     dodgerblue '[34;94m'
     blue '[34m'
     purple '[35;95m'
-    violet '[35m'
+    magenta '[35m'
 
     light_red '[31;91m' # Do not use this. Just for compatibility
     light_green '[32;92m' # Do not use this. Just for compatibility
@@ -91,7 +91,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_black '[40m' # Do not use this. Just for compatibility
 
     # Background Colors
-    bg_magenta '[41;101m'
+    bg_rose '[41;101m'
     bg_red '[41m'
     bg_orange '[43;103m'
     bg_yellow '[43m'
@@ -102,7 +102,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_dodgerblue '[44;104m'
     bg_blue '[44m'
     bg_purple '[45;105m'
-    bg_violet '[45m'
+    bg_magenta '[45m'
 
     bg_light_red '[41;101m' # Do not use this. Just for compatibility
     bg_light_green '[42;102m' # Do not use this. Just for compatibility
@@ -154,7 +154,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_base4 '30'
     raw_black '30' # Do not use this. Just for compatibility
 
-    raw_magenta '31;91'
+    raw_rose '31;91'
     raw_red '31'
     raw_orange '33;93'
     raw_yellow '33'
@@ -165,7 +165,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_dodgerblue '34;94'
     raw_blue '34'
     raw_purple '35;95'
-    raw_violet '35'
+    raw_magenta '35'
 
     raw_light_red '31;91' # Do not use this. Just for compatibility
     raw_light_green '32;92' # Do not use this. Just for compatibility
@@ -185,7 +185,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_base4 '40'
     raw_bg_black '40' # Do not use this. Just for compatibility
 
-    raw_bg_magenta '41;101'
+    raw_bg_rose '41;101'
     raw_bg_red '41'
     raw_bg_orange '43;103'
     raw_bg_yellow '43'
@@ -196,7 +196,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_dodgerblue '44;104'
     raw_bg_blue '44'
     raw_bg_purple '45;105'
-    raw_bg_violet '45'
+    raw_bg_magenta '45'
 
 
     raw_bg_light_red '41;101' # Do not use this. Just for compatibility
