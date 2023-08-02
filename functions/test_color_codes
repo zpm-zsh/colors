@@ -12,7 +12,7 @@ typeset -a colors; colors=(
   green
   springgreen
   cyan
-  dodgerblue
+  azure
   blue
   violet
   magenta
@@ -32,7 +32,7 @@ echo "
 ├────┼─────────────┼────┼─────────────┤
 │  9 │ cyan        │ 10 │ springgreen │
 ├────┼─────────────┼────┼─────────────┤
-│ 11 │ blue        │ 12 │ dodgerblue  │
+│ 11 │ blue        │ 12 │ azure       │
 ├────┼─────────────┼────┼─────────────┤
 │ 13 │ magenta     │ 14 │ violet      │
 ├────┼─────────────┼────┼─────────────┤
@@ -57,28 +57,6 @@ for color in $colors; do
   echo -n "${(l:3:: :)counter} "
   for background in $colors; do
   echo -n -e $c[bg_$background]$c[$color] aY4 $c[reset]
-  done
-  echo
-done
-
-
-echo "
-Dimmed 8 colors + 8 bright colors
-"
-
-
-echo -n '    '
-for color in {1..16}; do
-  echo -n '  '${(r:3:: :)color}
-done
-echo
-
-counter=0
-for color in $colors; do
-  counter=$((counter+1))
-  echo -n "${(l:3:: :)counter} "
-  for background in $colors; do
-  echo -n -e $c[dim]$c[bg_$background]$c[$color] aY4 $c[reset]
   done
   echo
 done
