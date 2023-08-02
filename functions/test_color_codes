@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-
 typeset -a colors; colors=(
   base1
   base2
@@ -12,7 +11,7 @@ typeset -a colors; colors=(
   green
   springgreen
   cyan
-  dodgerblue
+  azure
   blue
   violet
   magenta
@@ -32,7 +31,7 @@ echo "
 ├────┼─────────────┼────┼─────────────┤
 │  8 │ cyan        │  9 │ springgreen │
 ├────┼─────────────┼────┼─────────────┤
-│ 10 │ blue        │ 11 │ dodgerblue  │
+│ 11 │ blue        │ 12 │ azure       │
 ├────┼─────────────┼────┼─────────────┤
 │ 12 │ magenta     │ 13 │ violet      │
 ├────┼─────────────┼────┼─────────────┤
@@ -43,7 +42,6 @@ echo "
 echo "
 Standard 8 colors + 8 bright colors
 "
-
 
 echo -n '    '
 for color in {0..15}; do

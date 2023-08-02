@@ -8,12 +8,12 @@ echo -e " ${c[red]}COLOR RED      ${c[rose]}COLOR LIGHT RED"
 echo -e " ${c[yellow]}COLOR YELLOW   ${c[orange]}COLOR LIGHT YELLOW"
 echo -e " ${c[green]}COLOR GREEN    ${c[chartreuse]}COLOR LIGHT GREEN"
 echo -e " ${c[cyan]}COLOR CYAN     ${c[springgreen]}COLOR LIGHT CYAN"
-echo -e " ${c[blue]}COLOR BLUE     ${c[dodgerblue]}COLOR LIGHT BLUE"
+echo -e " ${c[blue]}COLOR BLUE     ${c[azure]}COLOR LIGHT BLUE"
 echo -e " ${c[magenta]}COLOR MAGENTA  ${c[violet]}COLOR LIGHT MAGENTA"
 
 echo
 
-echo -e "$c[rose] COLOR      ROSE ${c[reset]}  ${c[red]} COLOR     RED ${c[reset]} ${c[orange]} COLOR      ORANGE ${c[reset]}"
+echo -e "$c[rose] COLOR       ROSE ${c[reset]} ${c[red]} COLOR     RED ${c[reset]} ${c[orange]} COLOR      ORANGE ${c[reset]}"
 echo
 echo -e "                   ${c[yellow]} COLOR  YELLOW ${c[reset]}"
 echo
@@ -21,6 +21,6 @@ echo -e "$c[chartreuse] COLOR CHARTREUSE ${c[reset]} ${c[green]} COLOR   GREEN $
 echo
 echo -e "                   ${c[cyan]} COLOR    CYAN ${c[reset]}"
 echo
-echo -e "$c[dodgerblue] COLOR DODGERBLUE ${c[reset]} ${c[blue]} COLOR    BLUE ${c[reset]} ${c[violet]} COLOR      PURPLE ${c[reset]}"
+echo -e "$c[azure] COLOR      AZURE ${c[reset]} ${c[blue]} COLOR    BLUE ${c[reset]} ${c[violet]} COLOR      VIOLET ${c[reset]}"
 echo
 echo -e "                   ${c[magenta]} COLOR MAGENTA ${c[reset]}"
