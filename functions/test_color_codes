@@ -22,21 +22,21 @@ typeset -a colors; colors=(
 
 echo "
 ┌────┬─────────────┬────┬─────────────┐
-│  1 │ base1       │  2 │ base2       │
+│  0 │ base1       │  1 │ base2       │
 ├────┼─────────────┼────┼─────────────┤
-│  3 │ red         │  4 │ rose        │
+│  2 │ red         │  3 │ rose        │
 ├────┼─────────────┼────┼─────────────┤
-│  5 │ yellow      │  6 │ orange      │
+│  4 │ yellow      │  5 │ orange      │
 ├────┼─────────────┼────┼─────────────┤
-│  7 │ green       │  8 │ chartreuse  │
+│  6 │ green       │  7 │ chartreuse  │
 ├────┼─────────────┼────┼─────────────┤
-│  9 │ cyan        │ 10 │ springgreen │
+│  8 │ cyan        │  9 │ springgreen │
 ├────┼─────────────┼────┼─────────────┤
-│ 11 │ blue        │ 12 │ dodgerblue  │
+│ 10 │ blue        │ 11 │ dodgerblue  │
 ├────┼─────────────┼────┼─────────────┤
-│ 13 │ magenta     │ 14 │ violet      │
+│ 12 │ magenta     │ 13 │ violet      │
 ├────┼─────────────┼────┼─────────────┤
-│ 15 │ base3       │ 16 │ base4       │
+│ 14 │ base3       │ 15 │ base4       │
 └────┴─────────────┴────┴─────────────┘
 "
 
@@ -46,39 +46,18 @@ Standard 8 colors + 8 bright colors
 
 
 echo -n '    '
-for color in {1..16}; do
+for color in {0..15}; do
   echo -n '  '${(r:3:: :)color}
 done
 echo
 
 counter=0
 for color in $colors; do
-  counter=$((counter+1))
   echo -n "${(l:3:: :)counter} "
+  counter=$((counter+1))
   for background in $colors; do
-  echo -n -e $c[bg_$background]$c[$color] aY4 $c[reset]
+    echo -n -e $c[bg_$background]$c[$color] aY4 $c[reset]
   done
   echo
 done
 
-
-echo "
-Dimmed 8 colors + 8 bright colors
-"
-
-
-echo -n '    '
-for color in {1..16}; do
-  echo -n '  '${(r:3:: :)color}
-done
-echo
-
-counter=0
-for color in $colors; do
-  counter=$((counter+1))
-  echo -n "${(l:3:: :)counter} "
-  for background in $colors; do
-  echo -n -e $c[dim]$c[bg_$background]$c[$color] aY4 $c[reset]
-  done
-  echo
-done
