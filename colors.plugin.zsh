@@ -58,7 +58,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     black '[30m' # Do not use this. Just for compatibility
 
     # Colors
-    rose '[31;91m'
+    purple '[31;91m'
     red '[31m'
     orange '[33;93m'
     yellow '[33m'
@@ -91,7 +91,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     bg_black '[40m' # Do not use this. Just for compatibility
 
     # Background Colors
-    bg_rose '[41;101m'
+    bg_purple '[41;101m'
     bg_red '[41m'
     bg_orange '[43;103m'
     bg_yellow '[43m'
@@ -154,7 +154,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_base4 '30'
     raw_black '30' # Do not use this. Just for compatibility
 
-    raw_rose '31;91'
+    raw_purple '31;91'
     raw_red '31'
     raw_orange '33;93'
     raw_yellow '33'
@@ -185,7 +185,7 @@ if [[ -z "$NO_COLOR" && "$CLICOLOR" != 0 ]]; then
     raw_bg_base4 '40'
     raw_bg_black '40' # Do not use this. Just for compatibility
 
-    raw_bg_rose '41;101'
+    raw_bg_purple '41;101'
     raw_bg_red '41'
     raw_bg_orange '43;103'
     raw_bg_yellow '43'

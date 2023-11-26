@@ -3,7 +3,7 @@
 typeset -a colors; colors=(
   base1
   base2
-  rose
+  purple
   red
   orange
   yellow
@@ -23,7 +23,7 @@ echo "
 ┌────┬─────────────┬────┬─────────────┐
 │  0 │ base1       │  1 │ base2       │
 ├────┼─────────────┼────┼─────────────┤
-│  2 │ red         │  3 │ rose        │
+│  2 │ red         │  3 │ purple        │
 ├────┼─────────────┼────┼─────────────┤
 │  4 │ yellow      │  5 │ orange      │
 ├────┼─────────────┼────┼─────────────┤
@@ -58,4 +58,3 @@ for color in $colors; do
   done
   echo
 done
-
